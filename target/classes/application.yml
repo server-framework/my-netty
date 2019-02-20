@@ -1,0 +1,23 @@
+spring:
+  application:
+    name: netty
+
+server:
+  port: 9999
+  context-path: /
+
+test:
+  ws:
+    netty:
+      ioThreadNum: 5
+      backlog: 1024
+      readerIdleTime: 5
+      writerIdleTime: 5
+      allIdleTime: 5
+      port: 9900
+
+ctl:
+  event:
+    enabled: true
+    executor:
+      poolSize: 20
